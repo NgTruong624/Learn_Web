@@ -1,0 +1,215 @@
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+    background-color: burlywood;
+    color: blueviolet;
+    justify-content: space-between;
+    border-radius: 20px;
+    }
+    
+    h1{
+        margin-left: 40%;
+        border: 3px solid #eee;
+        padding: 10px;
+        width: fit-content;
+        box-shadow: 5px 5px wheat;
+    }
+    .head a{
+        text-decoration: none;
+    }
+    .head #logo {
+        height: 150px;
+        width: 200px;
+        border-radius: 20px;
+    
+    }
+    .info li{
+        height: 10px;
+        display: inline-block;
+        color:  black ;
+        font-family: sans-serif;
+        cursor: pointer;
+        transition: color 0.4s ease-in-out;
+        padding: 10px;
+    }
+    .info li:hover{
+        color: red;
+        transform: rotate(5deg);
+    }
+    
+    .info li::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #ff6347;
+        transition: width 0.4s ease-in-out;
+    }
+    
+    .info li:hover::after{
+        width: 100%;
+    }
+    
+    #moreoption{
+        border-radius: 10px;
+        height: 40px;
+        background-color: orange;
+        font-family: sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    
+    option{
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .login a img {
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        position: relative;
+        transition: all 0.4 ease-in-out;
+    }
+    
+    .login a img:hover{
+        filter: opacity(30%);
+    }
+
+
+    button {
+        border-radius: 10px;
+        font-weight: bold;
+    }
+   .thanhtoan{
+    position: relative;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    margin-left: 500px;
+    background-color: yellow;
+    z-index: 1;
+    cursor: pointer;
+   }
+
+   .thanhtoan::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 0.4s ease-in;
+   
+   }
+
+   .thanhtoan:hover::after{
+    width: 100%;
+    background-color: orange;
+    border-radius: 10px;
+    z-index: -1;
+   }
+
+    #cart-items {
+        width: 100%;
+        max-width: 800px; /* Đặt giới hạn chiều rộng cho container */
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 20px 20px wheat;
+    }
+
+    .cart-item {
+        display: flex; /* Sử dụng Flexbox để sắp xếp ảnh và thông tin sản phẩm thành 2 cột */
+        align-items: center; /* Canh giữa ảnh và nội dung theo chiều dọc */
+        border-bottom: 1px solid #ddd; /* Đường viền dưới mỗi sản phẩm */
+        padding: 10px 0;
+        gap: 60px; /* Khoảng cách giữa ảnh và phần thông tin */
+    }
+    .cart-item:hover{
+        background-color: whitesmoke;
+    }
+
+    .product-image {
+        width: 150px; /* Đặt kích thước cho ảnh sản phẩm */
+        height: 150px;
+        object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    }
+
+    .product-info {
+        display: flex;
+        flex-direction: column; /* Sắp xếp thông tin theo chiều dọc */
+        justify-content: space-between; /* Canh đều không gian giữa các thông tin */
+        flex: 1; /* Chiếm toàn bộ chiều rộng còn lại bên phải ảnh */
+    }
+
+    .product-name {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .product-price {
+        color: green;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .remove-btn {
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        align-self: flex-start; /* Đẩy nút xóa lên góc trên */
+    }
+
+    .remove-btn:hover {
+        background-color: #ff1a1a; /* Đổi màu khi hover */
+    }
+
+    #total-price {
+        display: flex;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 20px;
+        border: 2px solid black;
+        padding: 15px;
+        width: fit-content;
+       background-color: whitesmoke;
+       cursor: pointer;
+    }
+    .user-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .username {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    
+    .logout-btn {
+        background-color: #f44336;
+        color: white;
+        padding: 5px 10px;
+        text-decoration: none;
+        border-radius: 3px;
+        margin-right: 10px;
+    }
+    
+    .logout-btn:hover {
+        background-color: #d32f2f;
+    }
+    
+    .user-info a img {
+        width: 24px;
+        height: 24px;
+    }

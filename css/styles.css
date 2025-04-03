@@ -1,0 +1,234 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.15;
+    background-color: rgb(226,227,228);
+
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 230px;
+}
+
+.headline{
+    text-align: center;
+    margin: 40px 0px;
+
+}
+.headline .search-container{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.search-container {
+    display: flex;
+    width: 300px;
+    margin: 20px auto;
+    background-color: #f1f1f1; 
+    border-radius: 25px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+
+}
+
+.search-input {
+    flex: 1; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px 0 0 25px; 
+    font-size: 16px;
+    outline: none; 
+    background-color: transparent;
+}
+
+
+.search-button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 25px 25px 0; 
+    background-color: #007BFF; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+
+.search-button:hover {
+    background-color: #0056b3; 
+}
+
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.info li{
+    height: 10px;
+    display: inline-block;
+    color: black ;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+    padding: 10px;
+}
+.info li:hover{
+    color: red;
+    transform: rotate(5deg);
+}
+
+.info li::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6347;
+    transition: width 0.4s ease-in-out;
+}
+
+.info li:hover::after{
+    width: 100%;
+}
+
+.more select{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: orange;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.more option{
+    font-weight: bold;
+}
+
+
+h3{
+    font-size: 18px;
+    color: #111;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 3px solid #bebebe;
+    display: inline-block;
+    color: #555;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 20px 10px 10px -10px;
+
+}
+#wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+ul.products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul .products li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+li{
+    padding-bottom: 30px;
+}
+img{
+    width: 250px;
+    height: 230px;
+    display: block;
+    transition: 0.4s ease-in-out;
+
+}
+ul.products li img {
+    max-width: 100%;
+    
+}
+.product-top{
+    position: relative;
+    overflow: hidden;
+}
+
+li:hover .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+
+li:hover a.buy-now{
+    bottom: 0px;
+}
+.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute ;
+    width: 100%;
+    bottom: -36px;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+.product-info{
+    padding: 10px 0px;
+}
+ul.products li .product-info a{
+    display: block;
+    text-decoration: none;
+}
+.product-cat{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    padding: 3px 0px;
+}
+.product-name{
+    color: #334862;
+    padding: 3px 0px;
+}
+.product-price{
+    color: #111;
+    padding: 2px 0px;
+    font-weight: 600;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: auto;
+}
+.footer a{
+    text-decoration: none;
+    padding-bottom: 20px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.footer a:hover{
+    background-color: #9e9e9e;
+    color: white;
+}
+

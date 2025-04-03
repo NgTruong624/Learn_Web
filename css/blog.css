@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+    background-color: burlywood;
+    color: blueviolet;
+    justify-content: space-between;
+    border-radius: 20px;
+    }
+    
+    .head a{
+        text-decoration: none;
+    }
+    .head #logo {
+        height: 150px;
+        width: 200px;
+        border-radius: 20px;
+    
+    }
+    .info li{
+        height: 10px;
+        display: inline-block;
+        color:  black ;
+        font-family: sans-serif;
+        cursor: pointer;
+        transition: color 0.4s ease-in-out;
+        padding: 10px;
+    }
+    .info li:hover{
+        color: red;
+        transform: rotate(5deg);
+    }
+    
+    .info li::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #ff6347;
+        transition: width 0.4s ease-in-out;
+    }
+    
+    .info li:hover::after{
+        width: 100%;
+    }
+    
+    #moreoption{
+        border-radius: 10px;
+        height: 40px;
+        background-color: orange;
+        font-family: sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    
+    option{
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .login a img {
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        position: relative;
+        transition: all 0.4 ease-in-out;
+    }
+    
+    .login a img:hover{
+        filter: opacity(30%);
+    }
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.blog-content article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content article h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-content article p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.blog-content article a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,262 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+    background-color: burlywood;
+    color: blueviolet;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.head a {
+    text-decoration: none;
+}
+
+.head #logo {
+    height: 150px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.info .list {
+    padding: 0;
+}
+
+.info .list li {
+    height: 10px;
+    display: inline-block;
+    color: black;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+    padding: 10px;
+}
+
+.info .list li:hover {
+    color: red;
+    transform: rotate(5deg);
+}
+
+.info .list li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6347;
+    transition: width 0.4s ease-in-out;
+}
+
+.info .list li:hover::after {
+    width: 100%;
+}
+
+#moreoption {
+    border-radius: 10px;
+    height: 40px;
+    background-color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+.user-info a img {
+    width: 24px;
+    height: 24px;
+}
+
+.checkout-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-direction: row;
+    gap: 20px; /* Thêm khoảng cách giữa hai phần */
+}
+
+.checkout-form {
+    width: 50%; /* Thay đổi từ 60% thành 50% */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%; /* Đảm bảo mỗi form group chiếm toàn bộ chiều rộng */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#submit {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #ff4500;
+}
+
+.order-summary {
+    width: 50%; /* Thay đổi từ 35% thành 50% */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.order-summary h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#order-table th,
+#order-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#order-table th {
+    font-weight: 500;
+    background-color: #f9f9f9;
+}
+
+#total-price {
+    font-weight: bold;
+    color: #ff6347;
+}
+
+.main  {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    width: 50%;
+    padding: 10px;
+}
+.main label {
+    font-weight: bold;
+    margin-bottom:  15px;
+    
+}
+.main input{
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid black;
+    
+}
+.main input:hover {
+    background-color: #eee;
+}
+
+#payment-method {
+    height: 30px;
+    border-radius: 10px 0 10px 0px;
+}
+
+.main button{
+    margin-left: 30%;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px ;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px 10px 0 0;
+}
+.main img {
+    height: 330px;
+    width: 600px;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+.main button::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 10%;
+    bottom: -2;
+    left: 0;
+    transition: all 0.25s ease-in-out;
+    border-radius: 10px;
+}
+.main button:hover::after{
+    width: 100%;
+    z-index: -1;
+    background-color: red;
+}

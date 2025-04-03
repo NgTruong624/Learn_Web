@@ -1,0 +1,225 @@
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    background-color: burlywood;
+    color: blueviolet;
+    border-radius: 20px;
+    }
+
+.head #logo {
+    height: 150px;
+    width: 200px;
+    border-radius: 20px;
+}
+    .search-container {
+    display: flex;
+    width: 300px;
+    margin: 20px auto;
+    background-color: #f1f1f1; 
+    border-radius: 25px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+   
+
+    }
+
+    .search-input {
+        flex: 1; 
+        padding: 10px 15px;
+        border: none;
+        border-radius: 25px 0 0 25px; 
+        font-size: 16px;
+        outline: none; 
+        background-color: transparent;
+    }
+
+
+    .search-button {
+        padding: 10px;
+        border: none;
+        border-radius: 0 25px 25px 0; 
+        background-color: #007BFF; 
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease;
+
+    }
+
+    
+    .search-button:hover {
+        background-color: #0056b3; 
+    }
+
+    .search-button img {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+
+    .info li{
+        height: 10px;
+        display: inline-block;
+        color:  black ;
+        font-family: sans-serif;
+        cursor: pointer;
+        transition: color 0.4s ease-in-out;
+        padding: 10px;
+    }
+    .info li:hover{
+        color: red;
+        transform: rotate(5deg);
+    }
+
+    .info li::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #ff6347;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .info li:hover::after{
+        width: 100%;
+    }
+
+    #moreoption{
+        border-radius: 10px;
+        height: 40px;
+        background-color: orange;
+        font-family: sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    
+    option{
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .login a img {
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        position: relative;
+        transition: all 0.4 ease-in-out;
+    }
+    
+    .login a img:hover{
+        filter: opacity(30%);
+    }
+
+.product-detail{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    margin-right:40px ;
+}
+.left img{
+    width: 400px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.left{
+   
+    font-weight: bold;
+    text-align: center;
+}
+.right{
+    
+    width: 200px;
+}
+#product-description{
+    white-space: pre-line;
+}
+
+/* Phần thêm vào sau khi hoàn thành */
+.thanhtoan{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 28%;
+
+}
+.thanhtoan button{
+    margin: 10px 20px;
+    width: 180px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: orange;
+    z-index: 1;
+}
+
+.thanhtoan button::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.thanhtoan button:hover::after{
+    width: 100%;
+    background-color: yellow;
+    height: 100%;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+/* css cho phần tìm kiếm */
+.head a{
+    text-decoration: none;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+.user-info a img {
+    width: 24px;
+    height: 24px;
+}
+

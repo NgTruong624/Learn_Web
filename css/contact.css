@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 227, 228);
+}
+ .head{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 200px;
+background-color: burlywood;
+color: blueviolet;
+justify-content: space-between;
+border-radius: 20px;
+}
+
+.head a{
+    text-decoration: none;
+}
+.head #logo {
+    height: 150px;
+    width: 200px;
+    border-radius: 20px;
+
+}
+.info li{
+    height: 10px;
+    display: inline-block;
+    color:  black ;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+    padding: 10px;
+}
+.info li:hover{
+    color: red;
+    transform: rotate(5deg);
+}
+
+.info li::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6347;
+    transition: width 0.4s ease-in-out;
+}
+
+.info li:hover::after{
+    width: 100%;
+}
+
+#moreoption{
+    border-radius: 10px;
+    height: 40px;
+    background-color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+option{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login a img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.4 ease-in-out;
+}
+
+.login a img:hover{
+    filter: opacity(30%);
+}
+.main{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.img img{
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    margin: 40px 40px;
+
+}
+
+.input{
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 20px;
+
+}
+.a{
+    margin: 0 20px 30px 0px;
+}
+input{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 400px;
+}
+
+#tieude{
+    width: 880px;
+}
+textarea{
+    margin-top: 20px;
+    width: 880px;
+    margin-left: 70px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.submit button{
+    position: relative;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 400px;
+    background-color: #007BFF;
+    font-weight: bold;
+    z-index: 1;
+}
+
+
+.submit button::after{
+    border-radius: 10px;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    background-color: blueviolet;
+    left: 0;
+    transition: 0.4s ease-in-out;
+    z-index: -1;
+}
+.submit button:hover::after{
+    width: 100%;
+    
+}
+.address{
+    background-color: rgb(55,0,60);
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+footer .product a, .policy a{
+    text-decoration: none;
+    color: white;
+}
+.icon ul{
+    display: flex;
+    flex-direction: row;
+}
+.icon li{
+    list-style: none;
+    padding: 10px;
+}
+
+footer .product a:hover, .policy a:hover{
+    color: orange;
+    text-decoration:underline;
+}
+footer .connect{
+    text-align: center;
+    
+}
+.connect img {
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px yellow;
+}
+.connect img:hover{
+    background-color: orange;
+    border-radius: 10px;
+}

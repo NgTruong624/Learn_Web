@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+li {
+    list-style: none;
+}
+:root{
+    --main-bg-color: #414e66;
+    --sub-bg-color: #f2f7fb;
+    --top-height: 70px;
+    --main-transition: all 0.3s ease;
+}
+.row-grid{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: space-between;
+}
+/* Admin Sidebar */
+.admin-sidebar {
+    background-color: var(--main-bg-color);
+    height: 100vh;
+}
+.admin-sidebar .admin-sidebar-content {
+    padding: 30px 0 0 0; 
+    color: whitesmoke;
+
+}
+.admin-sidebar-top {
+    text-align: center;
+    height: var(--top-height);
+    border-bottom: 1px solid gray;
+}
+.admin-sidebar-top img{
+    width: 60px; 
+}
+.admin-sidebar-content > ul > li > a {
+    width: 100%;
+    display:block;
+    display: flex;
+    justify-content: flex-start;
+}
+.admin-sidebar-content ul li a i {
+    margin-right: 8px;
+}
+.admin-sidebar-content > ul > li > a i:last-child {
+    margin-left: auto;
+}
+.admin-sidebar-content > ul > li {
+    padding: 6px ;
+    transition: var(--main-transition);
+}
+.admin-sidebar-content ul li:hover {    
+    background-color: #24343e;
+}
+.sub-menu {
+    display: none;
+}
+.sub-menu.active {
+    display: block;
+}
+.sub-menu li:hover a  {
+    color: #949444;
+}
+/* Admin Content */
+.admin-content{
+    background-color: var(--sub-bg-color);
+}
+.admin-content-top{
+    display: flex;
+    justify-content: space-between;
+    height: var(--top-height);
+    border-bottom: 1px solid gray;
+}
+.admin-content-top-left{
+    display: flex;
+    align-items: center;
+}
+.admin-content-top-left ul{
+    display: flex;
+    align-items: center;
+}
+.admin-content-top-right{
+    display: flex;
+    align-items: center;
+}
+.admin-content-top-right ul{
+    display: flex;
+    align-items: center;
+}
+.admin-content-top-right ul li:last-child{
+    display: flex;
+    align-items: center;
+}
+.admin-content-top i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.admin-content-top-right ul li:last-child p{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.admin-content-main-title{
+    padding: 12px;
+    font-weight: 500;
+    position: relative;
+}
+.admin-content-main-title::before {
+    display: none; /* Ẩn dấu gạch */
+}
+
+/* Nếu bạn muốn giữ khoảng cách nhưng không có dấu gạch */
+.admin-content-main-title {
+    padding-bottom: 0; /* Điều chỉnh khoảng cách nếu cần */
+}
+/* Thêm sản phẩm */
+.product-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(65, 78, 102, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input[type="file"] {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: var(--main-transition);
+}
+
+.btn-submit:hover {
+    background-color: #0e532a;
+}
+
+
+/* Danh mục sản phẩm */
+.admin-content-main-content table {
+    width: 99%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(65, 78, 102, 0.1);
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.admin-content-main-content th,
+.admin-content-main-content td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.admin-content-main-content thead {
+    background-color: #414e66;
+    color: white;
+}
+
+.admin-content-main-content tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.admin-content-main-content td img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.admin-content-main-content .edit-btn,
+.admin-content-main-content .delete-btn,
+.admin-content-main-content .detail-btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: var(--main-transition);
+    color: white;
+    text-decoration: none;
+}
+
+.admin-content-main-content .edit-btn,
+.admin-content-main-content .detail-btn {
+    background-color: #4CAF50;
+}
+
+.admin-content-main-content .delete-btn {
+    background-color: #f44336;
+}
+
+.admin-content-main-content .edit-btn:hover,
+.admin-content-main-content .delete-btn:hover,
+.admin-content-main-content .detail-btn:hover {
+    opacity: 0.8;
+}
+.admin-content-main-content .action-column {
+    text-align: center;
+    white-space: nowrap;
+}
+.admin-content-main-content .non-confirm-btn, 
+.admin-content-main-content .confirm-btn {
+    padding: 3px;
+    color: whitesmoke;
+    border-radius: var(--main-border-radius);
+}
+.admin-content-main-content .non-confirm-btn {
+    background-color: #f44336;
+}
+.admin-content-main-content .confirm-btn {
+    background-color: #4CAF50;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.pagination a {
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #f1f1f1;
+}
+
+.pagination-btn {
+    background-color: #4CAF50;
+    color: black !important;
+    font-weight: bold;
+}
+
+.pagination-btn:hover {
+    background-color: #45a049;
+}
