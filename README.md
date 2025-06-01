@@ -1,4 +1,4 @@
-Firt Completed Web Project
+First Completed Web Project
 
 
 Just run in local
